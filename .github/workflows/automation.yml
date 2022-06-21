@@ -14,7 +14,7 @@ jobs:
       env:
         JIRA_BASE_URL: https://pulkitsamrat.atlassian.net
         JIRA_USER_EMAIL: pulkit155rkgit@gmail.com 
-        JIRA_API_TOKEN: 1Gg7NPdC9wgBQtAIpKJDB486
+        JIRA_API_TOKEN: AgfMqYPNo2HAl0LOmLd9DCF5
         
         
     - name: Transition issue
