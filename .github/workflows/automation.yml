@@ -18,11 +18,19 @@ jobs:
         
         
     - name: Transition issue
-      uses: atlassian/gajira-transition@master
+      uses: atlassian/gajira-transition@master 
       with:
         issue: ${{ github.head_ref }}
-        transition: "In progress"
-
+        transition: "In progress"  
+        
+        
+    - name: Transition issue not roll back
+      uses: atlassian/gajira-transition@master
+      with:
+       if: github.event_name == 'pull_request' || github.event.action == 'opened
+       issue: ${{ github.head_ref }}
+       more-transition: "To Do"
+       required: false
 
     # - name: Jira find and transition issues
     #   uses: bloobirds-it/action-transition-multiple-jira-issues@v1.1.0
