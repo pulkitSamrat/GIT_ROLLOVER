@@ -32,8 +32,7 @@ jobs:
     #     jira-api-token: ${{ secrets.JIRA_API_TOKEN }}
     #     github-token: ${{ secrets.GITHUB_TOKEN }}
     #     target-status: In Progress
-    #     issue-prefixes: BB, P1
-    #     ignore-statuses: Done, QA    
+   
 
     # - name: Jira find and transition issues
     #   uses: chontawee/gj-find-transition-issues@1.0.4
