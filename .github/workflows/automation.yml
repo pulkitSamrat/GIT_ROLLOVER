@@ -12,9 +12,9 @@ jobs:
     - name: Login
       uses: atlassian/gajira-login@master
       env:
-        JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
-        JIRA_USER_EMAIL: ${{ secrets.JIRA_USER_EMAIL }}
-        JIRA_API_TOKEN: ${{ secrets.JIRA_REST_API }}
+        JIRA_BASE_URL: https://pulkitsamrat.atlassian.net
+        JIRA_USER_EMAIL: pulkit155rkgit@gmail.com 
+        JIRA_API_TOKEN: 1Gg7NPdC9wgBQtAIpKJDB486
         
         
     - name: Transition issue
